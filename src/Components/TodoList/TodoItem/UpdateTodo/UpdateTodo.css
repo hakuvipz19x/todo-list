@@ -1,0 +1,167 @@
+.update-todo {
+    border: 1px solid #333;
+    border-top: none;
+    padding: 44px;
+}
+
+.update-todo__header {
+    text-align: center;
+    width: 100%;
+    font-weight: var(--title-weight);
+    color: var(--text-color);
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.update-todo__title-input {
+    width: 100%;
+    padding: 8px;
+    color: #000;
+    font-size: var(--font-size);
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 4px;
+}
+
+.update-todo__title-error {
+    color: red;
+}
+
+.update-todo__description-title {
+    font-weight: var(--title-weight);
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.update-todo__description-input {
+    width: 100%;
+    font-size: var(--font-size);
+    line-height: var(--font-size);
+    height: calc(var(--font-size) * 10);
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 4px;
+}
+
+.update-todo__option {
+    margin-top: 20px;
+}
+
+.update-todo__date-title {
+    font-size: var(--font-size);
+    font-weight: var(--title-weight);
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.update-todo__date-wrapper {
+    display: flex;
+    border: 2px solid #333;
+    align-items: center;
+    position: relative;
+}
+
+.update-todo__date-value {
+    padding: 8px;
+    font-size: var(--font-size);
+    color: var(--text-color);
+    line-height: var(--font-size);
+    flex-grow: 1;
+    border-right: 2px solid #333;
+}
+
+.update-todo__date-input {
+    border: none;
+    outline: none;
+    padding: 0 6px;
+}
+
+.update-todo__date-input::-webkit-datetime-format {
+    /* cursor: pointer; */
+}
+
+.update-todo__date-input::-webkit-datetime-edit {
+    display: none;
+}
+
+.update-todo__date-wrapper:hover .update-todo__date-icon {
+    opacity: 0.7;
+}
+
+.update-todo__date-error {
+    color: red;
+}
+
+.update-todo__piority-title {
+    font-size: var(--font-size);
+    font-weight: var(--title-weight);
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.update-todo__piority-wrapper {
+    display: flex;
+    border: 2px solid #333;
+    align-items: center;
+    position: relative;
+}
+
+.update-todo__piority-wrapper:hover {
+    cursor: pointer;
+}
+
+.update-todo__piority-wrapper:hover .update-todo__piority-icon {
+    opacity: 0.6;
+}
+
+.update-todo__piority-value {
+    padding: 8px;
+    font-size: var(--font-size);
+    color: var(--text-color);
+    line-height: var(--font-size);
+    flex-grow: 1;
+}
+
+.update-todo__piority-icon {
+    padding: 6px;
+    font-size: var(--font-size);
+    box-sizing: content-box;
+}
+
+.update-todo__piority-list {
+    list-style: none;
+    display: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.update-todo__piority-item {
+    padding: 8px;
+}
+
+.update-todo__piority-item:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.update-todo__btn {
+    margin-top: 140px;
+    text-align: center;
+    background-color: #5cb85c;
+    color: #fff;
+    font-size: var(--font-size);
+    line-height: 30px;
+    border-radius: 4px;
+}
+
+.update-todo__btn:hover {
+    cursor: pointer;
+    filter: brightness(96%)
+}
+
+.update-todo__btn:active {
+    transform: scale(98%);
+}
