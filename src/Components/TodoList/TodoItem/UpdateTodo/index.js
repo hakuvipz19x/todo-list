@@ -7,7 +7,7 @@ import { FaCaretDown } from "react-icons/fa";
 import { updateTodo } from '../../../../actions/todo'
 import { uncheckedTodo } from '../../../../actions/check'
 
-function UpdateTodo({ todo, index }) {
+function UpdateTodo({ todo, index, setShowDetail }) {
     const dispatch = useDispatch()
 
     const [title, setTitle] = useState(todo.title)
@@ -60,6 +60,8 @@ function UpdateTodo({ todo, index }) {
 
             const removeCheckedTodoAction = uncheckedTodo(todo)
             dispatch(removeCheckedTodoAction)
+
+            setShowDetail(false)
         }
 
 

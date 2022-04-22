@@ -5,7 +5,6 @@ import './AddTodo.css'
 import { FaCaretDown } from "react-icons/fa";
 import { addTodo } from '../../actions/todo'
 import { useDispatch } from 'react-redux';
-import store from '../../store.js'
 
 function AddTodo() {
     const dispatch = useDispatch()

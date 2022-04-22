@@ -56,6 +56,7 @@ function TodoItem({ todo, checked, index }) {
                     <UpdateTodo
                         todo={todo}
                         index={index}
+                        setShowDetail={setShowDetail}
                         key={todo}
                     />
                 }
